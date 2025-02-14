@@ -7,7 +7,7 @@ export default function MealsDetails() {
     const { id } = useParams(); 
 
 useEffect(() => {
-    if (!recipe) { t
+    if (!recipe) { 
         getRecipe(id);
     }
 }, [id, getRecipe, recipe]);
