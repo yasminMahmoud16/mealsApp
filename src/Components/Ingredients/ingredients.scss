@@ -1,0 +1,14 @@
+.ingredients-list {
+    text-align: center;
+    border-bottom: 3px solid #DE7167;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+
+
+    &:hover {
+        background-color: rgba(222, 113, 103, 0.2);
+        transform: scale(1.05);
+        border-color: #c94b40;
+    }
+}

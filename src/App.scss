@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+$lightOrange: #F09128;
+$darkOrange: #DE7167;
+
+h1 {
+  margin-top: 1rem;
+  color: #DE7167;
+  background: linear-gradient(to right, $lightOrange, $darkOrange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font: {
+    family: "Pacifico", serif;
+    weight: 900;
+    size: 3rem
+  }
+}
