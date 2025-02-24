@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { CategoryContext } from "../../Context/CategoryContext";
 import { useParams } from "react-router-dom";
 import './mealsDetails.scss'
+import logo from '../../assets/logo-BfNap0Pe.png'
 export default function MealsDetails() {
     const { recipe, getRecipe,isLoad } = useContext(CategoryContext);
     const { id } = useParams(); 
@@ -28,7 +29,7 @@ useEffect(() => {
 
                     <div className="img-div col-span-3 ">
 
-                        <img src={recipe.strMealThumb} alt="" className="w-full" />
+                        <img src={recipe.strMealThumb || logo} alt="" className="w-full" />
                     </div>
                     <div className="flex items-center gap-16 col-span-3">
 

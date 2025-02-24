@@ -109,7 +109,7 @@ export default function CategoryContextProvider({ children }) {
             setFilteredMeals(res.data.meals || []);
             
             setCatName(category);
-            // 
+            
         } catch (err) {
             console.log(err +'err from filterByCategory');
             
